@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-@pytest.mark.main_page
+@pytest.mark.card
 @pytest.mark.parametrize("path", El_main_page.featured)
 def test_main_page_featured(path, browser):
     Find_el(path = path, browser = browser, time = 5).find_by_xpah.click()

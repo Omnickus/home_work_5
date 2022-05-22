@@ -2,9 +2,9 @@ import pytest
 from elements import El_catalog
 from src.constructor import Find_el
 
-@pytest.mark.desktops
+@pytest.mark.catalog
 @pytest.mark.parametrize("url", El_catalog.common_url)
-def test_desktops_page(url, browser):
+def test_catalogs_page(url, browser):
     """
     Проверяет общие элементы для разных категорий
     """
