@@ -27,4 +27,3 @@ def test_main_page_open_product(browser):
     fetured_items[2].location_once_scrolled_into_view
     fetured_items[2].click()
     browser.find_elements_by_link_text("Apple Cinema")
-
